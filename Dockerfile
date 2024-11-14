@@ -1,6 +1,6 @@
 # Build the manager binary
 FROM golang:1.22 AS builder
-#在容器内不能打镜像添加代理
+#在容器内不能下载像添加代理
 ENV GOPROXY=https://goproxy.io
 ARG TARGETOS
 ARG TARGETARCH
